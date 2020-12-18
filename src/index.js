@@ -19,8 +19,5 @@ app.listen(app.get("puerto"), () => {
 
 //RUTAS
 app.get("/", (req, res) => {
-  res.render("index", {
-    title: "Esteban Navia | MiAPP",
-    background: path.join(__dirname, "views/img/background.jpg"),
-  });
+  res.render("index", { title: "Esteban Navia | MiAPP" });
 });
