@@ -1,13 +1,6 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-require("dotenv").config();
-
-const { Config } = {
-  author: process.env.AUTHOR,
-  name: process.env.NAME,
-  port: process.env.PORT,
-};
 
 app.set("puerto", 5000);
 app.set("views", path.join(__dirname, "views"));
